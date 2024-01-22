@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;;
+    cursor: url(imagenes/vuelo.png), auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar ul li a:hover{
+    color: #000000;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons i{ 
+    font-size: 25px;
+    color: white;
+    margin-right: 25px;
+}
+
+.icons i:hover{ 
+    color: rgb(0, 0, 0);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header{
+    background-image: url(imagenes/playafondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 53px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*grid*/
+.content.header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Dos columnas, una para el título y otra para el párrafo */
+    grid-template-rows: auto auto; /* Dos filas automáticas para el título y el párrafo, y una tercera para el botón */
+    gap: 1px; /* Espacio entre las celdas */
+  
+    /* Alineación del contenido en el centro */
+    justify-items: center;
+    align-items: center;
+}
+  
+  .title {
+    grid-column: 1; /* El título ocupará la primera columna */
+    grid-row: 1; /* El título estará en la primera fila */
+  }
+  
+  .p1 {
+    grid-column: 2; /* El párrafo ocupará la segunda columna */
+    grid-row: 1; /* El párrafo estará en la primera fila */
+  }
+
+
+.res{
+    min-height: 80vh;
+    background: white;
+}
+
+.content.res{
+    display: grid;
+    grid-template-columns: 1.0fr 1fr; /* Dos columnas, una para el título y otra para el párrafo */
+    grid-template-rows: auto auto; /* Dos filas automáticas para el título y el párrafo, y una tercera para el botón */
+    gap: 1px; /* Espacio entre las celdas */
+    /* Alineación del contenido en el centro */
+    justify-items: center;
+  align-items: center; 
+    
+}
+
+.horario{
+    grid-column: 1; /* El título ocupará la primera columna */
+    grid-row: 1; /* El título estará en la primera fila */
+}
+
+.horario{
+    margin-top: 10vh;
+    margin-left: 10vh;
+}
+.reservaciones{
+    grid-column: 2; /* El párrafo ocupará la segunda columna */
+    grid-row: 1; /* El párrafo estará en la primera fila */
+
+}
+
+.title1{
+    grid-column: 2; /* El titulo ocupará la segunda columna */
+    grid-row: 1; /* El titulo estará en la primera fila */
+}
+
+.btn-r{
+    grid-column: 2; /* El boton ocupará la segunda columna */
+    grid-row: 2; /* El boton estará en la primera fila */
+}
+
+.btn-r{
+    display:inline-flex ;
+    margin-bottom: 50vh;
+    padding: 10px 40px;
+    justify-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-r:hover{
+    border-color:rgb(217, 215, 215) ;
+    color:rgb(217, 215, 215) ;
+}
+.reservaciones{
+    color: black;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title{
+    margin: 80px;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title1{
+    margin-top: -60vh;
+    margin-left: 10vh;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title2{
+    margin-top: 50px;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p{
+    margin: 50px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover{
+    border-color:rgb(217, 215, 215) ;
+    color:rgb(217, 215, 215) ;
+}
+
+.btn-home {
+    display: flex;
+}
+.btn-home a{
+    margin: 10px 10px;
+}
+
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    background-color: white;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+.us{
+    background-image: url(imagenes/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+.header-txt{
+    width: 40%;
+}
+.header-txt h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 1px;
+}
+
+.header-txt p{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+} 
+
+
+/*PARA LAS IMAGENES*/
+.images{
+    width: 800px;
+    height: 380px;
+    position: absolute;
+    right: 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide h3{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.rows{
+    width: 180px;
+    position: absolute;
+    right: 620px;
+    bottom: 170px;
+}
+
+
+
+.swiper-button-prev{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-next{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+    color:black;
+}
+
+.swiper-button-prev:hover{
+    border-color:rgb(217, 215, 215) ;
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+    color: black;
+}
+
+.swiper-button-next:hover{
+    border-color:rgb(217, 215, 215) ;
+}
+
+/*--------------------------------------------------------------*/
+.us-txt{
+    width: 40%;
+}
+.us-txt h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.us-txt p{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+} 
+
+.pb{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/*PARA LAS IMAGENES*/
+.imagenes{
+    width: 800px;
+    height: 380px;
+    position: absolute;
+    right: 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide h2{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: black;
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.rowss{
+    width: 180px;
+    position: absolute;
+    right: 620px;
+    bottom: -2080px;
+}
+
+
+
+.swiper-button-prev{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-next{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+    color:black;
+}
+
+
+.swiper-button-next::after{
+    font-size: 25px;
+    color: black;
+}
+
+
